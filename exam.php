@@ -86,14 +86,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Math Exam</title>
 	<link rel="stylesheet" href="phpsql.css">
 </head>
-<script>
-   function submit() {
-
-	var jsvar = '<?=$_SESSION['points']?>';
-
-	   alert(jsvar);
-   } 
-</script>
 <body>
 	<div class="container" id="divExam">
 	<h1>Math Test - Time Limit 30 minutes</h1>
@@ -120,9 +112,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		<strong>14. 80 % of 9200 = </strong><input type="text" name="fourthP" required><br>
 		<strong>15. 42 % of 4800 = </strong><input type="text" name="fifthP" required><br><br>
 		<h1>Expressions</h1><br>
-		<strong>16. X + 45 = 35 What is X? = </strong><input type="text" name="thirdE" required><br>
-		<strong>17. 2. X - 526 = 445 What is X? = </strong><input type="text" name="fourthE" required><br>
-		<strong>18. If X = 5 then 2X+3-X = </strong><input type="text" name="fifthE" required><br><br>
+		<strong>16. X + 45 = 35 What is X? = </strong><input type="text" name="firstE" required><br>
+		<strong>17. 2. X - 526 = 445 What is X? = </strong><input type="text" name="secondE" required><br>
+		<strong>18. If X = 5 then 2X+3-X = </strong><input type="text" name="thirdE" required><br><br>
         <input type="submit" name="checkAnswers" value="Submit">
 
 	</form>
